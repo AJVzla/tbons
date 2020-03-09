@@ -1765,6 +1765,13 @@ div[class^='cont-'], div[class*=' cont-'] {
   transform: translate(-50%);
 }
 
+@media (max-width: 420px) {
+  .cabecera .nav-movil {
+    top: -100vh;
+    height: 100vh;
+  }
+}
+
 .cabecera .nav-movil ul {
   display: -webkit-box;
   display: -ms-flexbox;
