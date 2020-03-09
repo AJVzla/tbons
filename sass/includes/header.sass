@@ -1,0 +1,378 @@
+.cabecera
+	width: 100%
+	display: block
+	position: fixed
+	top: 0
+	left: 0
+	background: transparent
+	z-index: 9999
+	@extend %animacion-suave
+	&.scroll
+		display: none
+		@extend %animacion-suave
+	.cont-1300 
+		display: flex
+		justify-content: space-between
+		align-items: center
+		position: relative
+		padding: 25px 15px
+		@media(max-width: 1120px)
+			padding: 25px 35px
+		@media(max-width: 915px)
+			align-items: center
+		.brand
+			display: flex
+			align-items: center
+			max-width: 390px
+			width: 100%
+			justify-content: space-between
+			a
+				font-size: 16px
+				line-height: 24px
+				@extend %lato-regular
+				color: $negro
+				@media(max-width: 1120px)
+					font-size: 15px
+					color: #fff
+				&:nth-child(2)
+					@extend %lato-bold
+					text-decoration: none
+					font-size: 16px
+					line-height: 24px
+					color: $azul
+					@media(max-width: 1120px)
+						font-size: 15px
+						color: #fff
+					@media(max-width: 915px)
+						display: none
+				&:nth-child(3)
+					@media(max-width: 915px)
+						display: none
+				&:hover,
+				&.activo
+					opacity: 0.9
+			.dropdown
+				@extend %animacion-suave
+				@media(max-width: 915px)
+					display: none
+				.dropdown-trigger
+					.button
+						@extend %animacion-suave
+						outline: none
+						border: none
+						@extend %lato-regular
+						background: transparent
+						@media(max-width: 1120px)
+							color: #fff
+				.dropdown-menu
+					padding: 0
+					border: none
+					-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.30)
+					-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.30)
+					box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.30)
+					.dropdown-content
+						border: none
+						.dropdown-item
+							@media(max-width: 1120px)
+								color: $negro
+			.logo 
+				padding-right: 10px
+				svg 
+					width: 59px
+					height: 34px
+					display: block
+					#Group-11-Copy-4
+						@extend %animacion-suave
+						@media(max-width: 1120px)
+							fill: #fff
+							&.activo
+								fill: $azul !important
+	.navegacion 
+		display: flex
+		justify-content: center 
+		align-items: flex-end 
+		flex-direction: column-reverse
+		background: transparent
+		width: 100%
+		@extend %animacion-nav
+		@media(max-width: 915px)
+			overflow-y: auto
+			flex-direction: column
+			justify-content: flex-start
+			align-items: center
+			box-shadow: 0 3px 1px rgba(0,0,0,0.5)
+			position: absolute
+			padding: 30px 15px
+			top: 93px
+			right: -150vw
+			width: 100%
+			height: calc(100vh - 52px)
+		&.is-active
+			right: 0
+		.nav-principal
+			ul
+				display: flex
+				align-items: center
+				max-width: 255px
+				width: 100%
+				justify-content: space-between
+				li
+					display: inline-block
+					padding: 0 4px
+					@media(max-width: 1120px)
+						padding: 0 5px
+					@media(max-width: 915px)
+						display: block
+						text-align: center
+						padding: 0px
+						margin: 15px 0
+					&:first-child
+						a
+							color: #fff
+							@extend %lato-bold
+							text-decoration: none
+							font-size: 15px
+							line-height: 24px
+							@extend %animacion-suave
+							&:hover
+								font-size: 17px
+					&:last-child
+						padding-left: 20px
+						a
+							width: 124px
+							height: 40px
+							color: $azul
+							@extend %animacion-suave
+							@extend %lato-bold
+							&:hover
+								background: transparent
+								color: #fff
+								border: 1px solid #fff
+					a
+						@extend %lato-bold
+						text-decoration: none
+						font-size: 15px
+						line-height: 24px
+						color: $negro
+						@media(max-width: 1145px)
+							font-size: 14px
+						&:hover,
+						&.activo
+							color: #fff
+		.nav-secundaria
+			ul
+				margin: 0 0 5px
+				li 
+					display: inline-block
+					@media(max-width: 915px)
+						display: block 
+						margin: 10px 0
+					span
+						// @extend %lato-black
+						color: blue
+					img
+						padding-left: 10px
+					a 
+						display: inline-block
+						font-size: 16px
+						line-height: 24px
+						color: blue
+						padding: 7px 12px
+						// @extend %lato-black
+						&:hover
+							color: $negro
+						@media(max-width: 1120px)
+							font-size: 14px
+							padding: 5px 8px
+						@media(max-width: 915px)
+							font-size: 18px
+							text-align: center
+							margin: 0 auto
+		.nav-mobile
+			display: flex 
+			justify-content: center 
+			align-items: center
+			.acceso-mobile 
+	.nav-movil
+		position: absolute
+		top: -500px
+		width: 100%
+		height: 500px
+		left: 50%
+		background: #fff
+		z-index: -1
+		transform: translate(-50%)
+		@extend %animacion-nav
+		ul
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			width: 100%
+			margin-top: 75px
+			li
+				padding: 20px 0
+				&:nth-child(3)
+					width: 100%
+					display: flex
+					justify-content: center
+					.dropdown
+						@extend %animacion-suave
+						.dropdown-trigger
+							.button
+								@extend %animacion-suave
+								outline: none
+								border: none
+								font-weight: bold
+								@extend %lato-regular
+								background: transparent
+								@media(max-width: 1120px)
+									color: $negro
+				.dropdown-menu
+					padding: 0
+					border: none
+					-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.30)
+					-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.30)
+					box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.30)
+					.dropdown-content
+						border: none
+				&:nth-child(4)
+					padding-top: 35px
+					a
+						color: $azul !important
+						font-weight: 400
+						padding: 15px 20px
+						border-radius: 8px
+						&:hover
+							-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.30)
+							-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.30)
+							box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.30)
+						&:focus
+							-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.10)
+							-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.10)
+							box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.10)
+				a
+					font-size: 15px
+					line-height: 24px
+					font-weight: bold
+					color: $negro
+				
+				.btn
+					color: $azul
+					border: none
+					display: flex
+					width: 152px
+					height: 52px
+					-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.20)
+					-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.20)
+					box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.20)
+					&:hover
+						-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.30)
+						-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.30)
+						box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.30)
+					&:focus
+						-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.10)
+						-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.10)
+						box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.10)
+		&.activo
+			top: 0
+.hamburger
+	@media(min-width: 915px)
+		display: none
+.hamburger,
+.hamburger:focus
+	border: none
+	width: 40px
+	height: 40px
+	text-transform: none
+	margin: 0
+	overflow: visible
+	cursor: pointer
+	outline: none
+	z-index: 99999999
+	background-color: transparent
+	transition: all 250ms ease-in-out
+
+.hamburger-box
+	display: inline-block
+	width: 20px
+	height: 20px
+	border-radius: 5px
+	position: relative
+	-webkit-transition: all .20s ease-in-out
+	-moz-transition: all .20s ease-in-out
+	-o-transition: all .20s ease-in-out
+	-ms-transition: all .20s ease-in-out
+	transition: all .20s ease-in-out
+
+.hamburger:hover .hamburger-box
+	background: none
+
+.hamburger-inner
+	display: block
+	margin-top: 1px
+	top: 50%
+	left: 0
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after
+	width: 25px
+	height: 2px
+	border-radius: 3px
+	background-color: #fff
+	position: absolute
+	transition-property: -webkit-transform
+	transition-property: transform
+	transition-property: transform, -webkit-transform
+	transition-duration: 0.15s
+	transition-timing-function: ease
+	
+.hamburger-inner::before,
+.hamburger-inner::after
+	content: ''
+	display: block
+
+.hamburger-inner::before
+	top: -6px
+
+.hamburger-inner::after
+	bottom: -6px
+
+//Efecto de hambuger
+.hamburger--efecto .hamburger-box
+	-webkit-perspective: 80px
+	perspective: 80px
+
+.hamburger--efecto .hamburger-inner
+	transition: background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1)
+	transition: transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1)
+	transition: transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1)
+
+.hamburger--efecto .hamburger-inner::after
+	transition: -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1)
+	transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1)
+	transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1)
+
+.hamburger--efecto.is-active .hamburger-inner
+	background-color: transparent
+	@extend %animacion-suave
+	-webkit-transform: rotateY(180deg)
+	transform: rotateY(180deg)
+
+.hamburger--efecto.is-active .hamburger-inner::before
+	background-color: $azul
+	@extend %animacion-suave
+	-webkit-transform: translate3d(0, 6px, 0) rotate(45deg)
+	transform: translate3d(0, 6px, 0) rotate(45deg)
+
+.hamburger--efecto.is-active .hamburger-inner::after
+	background-color: $azul
+	@extend %animacion-suave
+	-webkit-transform: translate3d(0, -6px, 0) rotate(-45deg)
+	transform: translate3d(0, -6px, 0) rotate(-45deg)
+
+@media(max-width: 479px)
+	.hamburger,
+	.hamburger:focus
+		margin: 0

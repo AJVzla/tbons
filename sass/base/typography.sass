@@ -1,0 +1,46 @@
+// Stage 1
+// En primer lugar hay que configurar el archivo js/font.js (antes de seguir leyendo esto, pasá por fonts.js).
+// Cargamos las familias/variantes más importantes (y solo en regular) para que se visualicen primero ni bien entramos al sitio. El navegador va a simular el resto de las variantes hasta que se carguen en el Stage 2.
+.fonts-loaded body 
+  font-family: LatoRegular, sans-serif
+// Stage 2
+// Cargamos el resto de las familias/variantes en una segunda etapa
+.fonts-b-loaded
+  %lato-regular
+    font-family: LatoRegular, sans-serif
+  %lato-bold
+    font-family: LatoBold, sans-serif
+  %lato-black
+    font-family: LatoBlack, sans-serif
+  %lato-light
+    font-family: LatoLight, sans-serif
+  %lato-thin
+    font-family: LatoThin, sans-serif
+  %arial
+    font-family: Arial, sans-serif
+// Cargo las tipografías con FontSquirrel (descargarlas de Google Fonts y generar variante por variante en FontSquirrel)
+@font-face 
+    font-family: LatoRegular
+    src: url('../fonts/lato/lato-regular-webfont.woff2') format('woff2'), url('../fonts/lato/lato-regular-webfont.woff') format('woff')
+    font-weight: 400
+    font-style: normal
+@font-face 
+    font-family: LatoBold
+    src: url('../fonts/lato/lato-bold-webfont.woff2') format('woff2'), url('../fonts/lato/lato-bold-webfont.woff') format('woff')
+    font-weight: 700
+    font-style: normal
+@font-face 
+    font-family: LatoBlack
+    src: url('../fonts/lato/lato-black-webfont.woff2') format('woff2'), url('../fonts/lato/lato-black-webfont.woff') format('woff')
+    font-weight: 900
+    font-style: normal
+@font-face 
+    font-family: LatoLight
+    src: url('../fonts/lato/lato-light-webfont.woff2') format('woff2'), url('../fonts/lato/lato-light-webfont.woff') format('woff')
+    font-weight: 300
+    font-style: normal
+@font-face 
+    font-family: LatoThin
+    src: url('../fonts/lato/lato-thin-webfont.woff2') format('woff2'), url('../fonts/lato/lato-thin-webfont.woff') format('woff')
+    font-weight: 300
+    font-style: normal

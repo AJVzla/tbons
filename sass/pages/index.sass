@@ -1,0 +1,572 @@
+.hero
+	padding-top: 160px
+	background-image: url(../images/home/background.png)
+	background-size: contain
+	background-position: top right
+	background-repeat: no-repeat
+	padding-bottom: 100px
+	@media(min-width: 1440px)
+		padding-bottom: 325px
+	@media(max-width: 1120px)
+		padding-top: 185px
+		background-size: cover
+		background-position: center
+	@media(max-width: 1050px)
+		background-size: auto
+	@media(max-width: 420px)
+		padding-top: 140px
+	.cont-1300
+		display: flex
+		align-items: center
+		@media(max-width: 1120px)
+			flex-direction: column
+		@media(max-width: 420px)
+			padding: 0px 20px
+		.texto
+			width: 50%
+			@media(max-width: 1120px)
+				width: 100%
+				max-width: 700px
+			.caja
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				@media(max-width: 1120px)
+					align-items: center
+				.dropdown
+					.dropdown-trigger
+						.button
+							border: none
+							background: #F0F2F4
+							width: 162px
+							height: 44px
+							display: flex
+							align-items: center
+							span
+								font-size: 13px
+								line-height: 15px
+								@extend %lato-bold
+								.bold
+									font-weight: 700
+				.title
+					padding-top: 24px
+					font-size: 56px
+					line-height: 67px
+					@extend %lato-black
+					@media(max-width: 1100px)
+						color: #fff
+						text-align: center
+					@media(max-width: 420px)
+						font-size: 32px
+						line-height: 42px
+				.subtitle
+					padding-top: 31px
+					font-size: 18px
+					line-height: 28px
+					max-width: 500px 
+					width: 100%
+					@media(max-width: 1100px)
+						color: #fff
+						text-align: center
+					@media(max-width: 420px)
+						font-size: 16px
+						line-height: 28px
+				a
+					color: #fff
+					width: 182px
+					height: 52px
+					@extend %lato-bold
+					font-size: 18px
+					line-height: 24px
+					@extend %animacion-suave
+					&:hover
+						background: transparent
+						color: $azul
+						border: 1px solid $azul
+					@media(max-width: 1100px)
+						background: #fff
+						color: $azul
+						border: 1px solid $azul
+						&:hover
+							background: transparent
+							color: #fff
+							border: 1px solid #fff
+
+		.image
+			width: 50%
+			@media(max-width: 1100px)
+				width: 100%
+				display: flex
+				justify-content: center
+			img
+				width: 100%
+				max-width: 637px
+				@media(max-width: 420px)
+					padding-top: 30px
+.hero-1
+	position: relative
+	top: -100px
+	padding-top: 80px
+	@media(min-width: 1440px)
+		padding-top: 0
+	@media(max-width: 1100px)
+		padding-top: 180px
+		padding-bottom: 0
+	@media(max-width: 420px)
+		padding-top: 40px
+	.cont-1170
+		display: flex
+		align-items: center
+		@media(max-width: 1100px)
+			flex-direction: column
+		@media(max-width: 420px)
+			padding: 0px 20px
+		.texto
+			width: 50%
+			display: flex
+			flex-direction: column
+			@media(max-width: 1100px)
+				width: 100%
+				max-width: 700px
+			.caja
+				.title
+					font-size: 48px
+					line-height: 56px
+					@media(max-width: 1100px)
+						text-align: center
+					@media(max-width: 420px)
+						font-size: 32px
+						line-height: 42px
+						text-align: left
+				.subtitle
+					padding-top: 31px
+					font-size: 18px
+					line-height: 26px
+					@media(max-width: 1100px)
+						text-align: center
+					@media(max-width: 420px)
+						font-size: 16px
+						line-height: 28px
+						text-align: left
+		.image
+			width: 50%
+			display: flex
+			justify-content: center
+			@media(max-width: 1100px)
+				width: 100%
+			img
+				width: 100%
+				max-width: 370px
+.hero-2
+	padding-bottom: 100px
+	@media(max-width: 420px)
+		padding-bottom: 50px
+	.cont-1300
+		display: flex
+		align-items: center
+		@media(max-width: 1100px)
+			flex-direction: column-reverse
+		@media(max-width: 420px)
+			padding: 0px 20px
+		.texto
+			width: 45%
+			display: flex
+			flex-direction: column
+			@media(max-width: 1100px)
+				width: 100%
+				max-width: 700px
+			.caja
+				.title
+					font-size: 48px
+					line-height: 56px
+					@media(max-width: 1100px)
+						text-align: center
+					@media(max-width: 420px)
+						font-size: 32px
+						line-height: 42px
+						text-align: left
+				.subtitle
+					padding-top: 31px
+					font-size: 18px
+					line-height: 26px
+					@media(max-width: 1100px)
+						text-align: center
+					@media(max-width: 420px)
+						font-size: 16px
+						line-height: 28px
+						text-align: left
+				.lista
+					display: flex
+					align-items: center
+					justify-content: center
+					padding: 15px 0
+					@media(max-width: 420px)
+						flex-direction: column
+						align-items: center
+					img
+						width: 24px
+						@media(max-width: 420px)
+							width: 40px
+					p
+						font-size: 16px
+						padding-left: 30px
+						line-height: 24px
+						margin: 0
+						@media(max-width: 420px)
+							padding-left: 0
+							padding-top: 20px
+		.image
+			width: 55%
+			display: flex
+			justify-content: center
+			@media(max-width: 1100px)
+				width: 100%
+			img
+				width: 100%
+				max-width: 600px
+.hero-3
+	padding-top: 80px
+	padding-bottom: 100px
+	@media(max-width: 1100px)
+		padding-top: 0
+	@media(max-width: 420px)
+		padding-top: 40px
+		padding-bottom: 50px
+	.cont-1170
+		display: flex
+		align-items: center
+		padding: 0px 60px
+		@media(max-width: 1100px)
+			flex-direction: column
+		@media(max-width: 420px)
+			padding: 0px 20px
+		.texto
+			display: flex
+			flex-direction: column
+			@media(max-width: 1100px)
+				width: 100%
+				max-width: 700px
+			.caja
+				display: flex
+				flex-direction: column
+				align-items: center
+				.title
+					font-size: 48px
+					line-height: 56px
+					text-align: center
+					max-width: 800px
+					width: 100%
+					@media(max-width: 420px)
+						font-size: 32px
+						line-height: 42px
+						text-align: left
+				.subtitle
+					padding-top: 31px
+					font-size: 18px
+					line-height: 26px
+					text-align: center
+					max-width: 800px
+					width: 100%
+					@media(max-width: 420px)
+						font-size: 16px
+						line-height: 28px
+						text-align: left
+				img
+					width: 100%
+					max-width: 840px
+				.italic
+					max-width: 420px
+					width: 100%
+					font-size: 14px
+					line-height: 26px
+					text-align: center
+					padding-bottom: 50px
+				.cajas
+					display: flex
+					flex-wrap: wrap
+					justify-content: space-between
+					.lista
+						max-width: 420px
+						width: 100%
+						display: flex
+						align-items: center
+						justify-content: center
+						padding: 15px 0
+						@media(max-width: 1100px)
+							max-width: 100%
+						@media(max-width: 420px)
+							flex-direction: column
+							align-items: center
+						img
+							width: 24px
+							@media(max-width: 420px)
+								width: 40px
+						p
+							font-size: 16px
+							padding-left: 30px
+							line-height: 24px
+							margin: 0
+							@media(max-width: 420px)
+								padding-left: 0
+								padding-top: 20px
+.hero-4
+	padding-top: 80px
+	padding-bottom: 100px
+	@media(max-width: 420px)
+		padding-top: 40px
+		padding-bottom: 50px
+	.cont-1170
+		display: flex
+		align-items: center
+		@media(max-width: 1100px)
+			flex-direction: column
+		@media(max-width: 420px)
+			padding: 0px 20px
+		.texto
+			width: 45%
+			display: flex
+			flex-direction: column
+			@media(max-width: 1100px)
+				width: 100%
+				max-width: 700px
+			.caja
+				.title
+					font-size: 48px
+					line-height: 56px
+					@media(max-width: 1100px)
+						text-align: center
+					@media(max-width: 420px)
+						font-size: 32px
+						line-height: 42px
+						text-align: left
+				.subtitle
+					padding-top: 31px
+					font-size: 18px
+					line-height: 26px
+					@media(max-width: 1100px)
+						text-align: center
+					@media(max-width: 420px)
+						font-size: 16px
+						line-height: 28px
+						text-align: left
+				.lista
+					display: flex
+					align-items: center
+					justify-content: center
+					padding: 15px 0
+					@media(max-width: 420px)
+						flex-direction: column
+						align-items: center
+					img
+						width: 24px
+						@media(max-width: 420px)
+							width: 40px
+					p
+						font-size: 16px
+						padding-left: 30px
+						line-height: 24px
+						margin: 0
+						@media(max-width: 420px)
+							padding-left: 0
+							padding-top: 20px
+		.image
+			width: 55%
+			display: flex
+			justify-content: center
+			@media(max-width: 1100px)
+				width: 100%
+			img
+				width: 100%
+				max-width: 591px
+.hero-5
+	padding-top: 80px
+	padding-bottom: 100px
+	@media(max-width: 420px)
+		padding-top: 0
+		padding-bottom: 20px
+	.cont-1170
+		display: flex
+		justify-content: center
+		padding: 0px 60px
+		width: 100%
+		@media(max-width: 1100px)
+			flex-direction: column
+		@media(max-width: 420px)
+			padding: 0px 20px
+		.texto
+			display: flex
+			flex-direction: column
+			align-items: center
+			width: 100%
+			@media(max-width: 1100px)
+				width: 100%
+				padding: 0 15px
+			.caja
+				display: flex
+				flex-direction: column
+				align-items: center
+				max-width: 800px
+				width: 100%
+				.gear
+					width: 84px
+					height: 84px
+					display: flex
+					align-items: center
+					justify-content: center
+					background: #FF4A00
+					border-radius: 13px
+					margin: 40px 0
+					-webkit-box-shadow: 1px 38px 50px -25px rgba(0,0,0,1)
+					-moz-box-shadow: 1px 38px 50px -25px rgba(0,0,0,1)
+					box-shadow: 1px 10px 50px -27px rgba(0,0,0,1)
+					img
+						width: 33px
+				.title
+					font-size: 48px
+					line-height: 64px
+					text-align: center
+					@media(max-width: 420px)
+						font-size: 32px
+						line-height: 42px
+				.subtitle
+					padding-top: 31px
+					font-size: 18px
+					line-height: 22px
+					text-align: center
+					@media(max-width: 420px)
+						font-size: 16px
+						line-height: 28px
+			.cartas
+				display: flex
+				justify-content: space-between
+				padding-top: 100px
+				flex-wrap: wrap
+				width: 100%
+				padding-bottom: 75px
+				@media(max-width: 1120px)
+					justify-content: center
+				.carta
+					display: flex
+					margin : 50px 0
+					flex-direction: column
+					max-width: 326px
+					height: 287px
+					width: 100%
+					position: relative
+					align-items: center
+					border: none
+					box-shadow: 8px 8px 24px 0 rgba(0,0,0,.12)
+					@extend %animacion-suave
+					&:hover
+						box-shadow: 8px 8px 24px 0 rgba(77,67,217,.12)
+						.icono
+							box-shadow: 4px 4px 12px 0 rgba(77,67,217,.12)
+					@media(max-width: 1120px)
+						max-width: 100%
+					&:nth-child(2)
+						.icono
+							img
+								height: 24px
+					.icono
+						width: 84px
+						height: 84px
+						display: flex
+						margin-top: -56px
+						background: #fff
+						justify-content: center
+						align-items: center
+						border-radius: 50%
+						@extend %animacion-suave
+						box-shadow: 8px 8px 24px 0 rgba(0,0,0,.12)
+						img
+							width: 34px
+							height: 34px
+					.texto
+						display: flex
+						flex-direction: column
+						max-width: 222px
+						padding-top: 50px
+						@media(max-width: 1120px)
+							max-width: 90%
+						.title
+							font-size: 24px
+							line-height: 29px
+							text-align: center
+						.subtitle
+							padding-top: 15px
+							font-size: 14px
+							line-height: 24px
+							text-align: center
+			.btn-h
+				max-width: 324px
+				display: flex
+				width: 100%
+				a
+					height: 46px
+					text-decoration: none
+					color: #fff
+					width: 100%
+					font-size: 16px
+					line-height: 24px
+					@extend %lato-bold
+					@extend %animacion-suave
+					&:hover
+						background: transparent
+						color: $azul
+						border: 1px solid $azul
+.hero-6
+	margin: 0 20px
+	padding-top: 100px
+	padding-bottom: 135px
+	@media(max-width: 420px)
+		padding-bottom: 60px
+	.cont-1300
+		background-image: url(../images/home/background.png)
+		background-size: cover
+		border-radius: 13px
+		height: 350px
+		display: flex
+		padding: 0
+		align-items: center
+		justify-content: space-between
+		@media(max-width: 1120px)
+			justify-content: center
+		@media(max-width: 500px)
+			height: 260px
+		.texto
+			padding-left: 100px
+			@media(max-width: 1120px)
+				padding: 0 20px
+				text-align: center
+			.title
+				font-size: 48px
+				line-height: 56px
+				max-width: 491px
+				width: 100%
+				color: #fff
+				@extend %lato-black
+				@media(max-width: 500px)
+					font-size: 28px
+					line-height: 36px
+			a
+				text-decoration: none
+				color: #1193F5
+				font-size: 15px
+				@extend %animacion-suave
+				line-height: 24px
+				@extend %lato-bold
+				width: 152px
+				height: 46px
+				&:hover
+					border: 1px solid #fff
+					color: #fff
+					background: transparent
+		.back
+			background-image: url("../images/home/back.png")
+			background-size: contain
+			height: 350px
+			width: 685px
+			background-repeat: no-repeat
+			background-position: bottom right
+			@media(max-width: 1120px)
+				display: none
