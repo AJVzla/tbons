@@ -17,6 +17,19 @@ $(document).ready(function(){
 	dropdown.addEventListener('click', function(event) {
 	    event.stopPropagation();
 	    dropdown.classList.toggle('is-active');
+	    $('.icon').toggleClass('rotat');
+	});
+	let hello = document.querySelector('.hello');
+	hello.addEventListener('click', function(event) {
+	    event.stopPropagation();
+	    hello.classList.toggle('is-active');
+	    $('.icon').toggleClass('rotat');
+	});
+	let world = document.querySelector('.world');
+	world.addEventListener('click', function(event) {
+	    event.stopPropagation();
+	    world.classList.toggle('is-active');
+	    $('.icon').toggleClass('rotat');
 	});
 	// Tabs
 		// https://github.com/filamentgroup/Accessible-jQuery-Tabs
