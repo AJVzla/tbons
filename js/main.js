@@ -17,7 +17,7 @@ $(document).ready(function(){
 	dropdown.addEventListener('click', function(event) {
 	    event.stopPropagation();
 	    dropdown.classList.toggle('is-active');
-	    $('.icon').toggleClass('rotat');
+	    $('.icom').toggleClass('rotat');
 	});
 	// Tabs
 		// https://github.com/filamentgroup/Accessible-jQuery-Tabs
