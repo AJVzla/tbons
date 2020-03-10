@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 *
   margin: 0
   padding: 0
   box-sizing: border-box
 main
+body
+  overflow-x: hidden
 ul
   list-style: none
 a
@@ -140,3 +143,149 @@ div[class^='cont-'], div[class*=' cont-']
   -ms-animation: rotating 12s linear infinite
   -o-animation: rotating 12s linear infinite
   animation: rotating 12s linear infinite
+=======
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+main
+body
+  overflow-x: hidden
+ul
+  list-style: none
+a
+  text-decoration: none
+  &:hover, &:focus
+    text-decoration: none
+  @extend %animacion-suave
+
+.clear 
+  clear: both
+
+/* Animación suave */
+%animacion-suave 
+  -webkit-transition: all .35s ease-in-out
+  -moz-transition: all .35s ease-in-out
+  -o-transition: all .35s ease-in-out
+  -ms-transition: all .35s ease-in-out
+  transition: all .35s ease-in-out
+
+%animacion-nav
+  -webkit-transition: all .55s ease-in-out
+  -moz-transition: all .55s ease-in-out
+  -o-transition: all .55s ease-in-out
+  -ms-transition: all .55s ease-in-out
+  transition: all .55s ease-in-out
+
+/*Oculta las slides de más mientras carga el JS*/
+.owl-carousel 
+  display: block
+.owl-carousel li:not(:first-child) 
+  display: none
+.owl-carousel.owl-loaded li:not(:first-child) 
+  display: block
+
+// Placeholder Color
+
+@mixin placeholder-color($color) 
+  &::-webkit-input-placeholder  /* WebKit browsers */
+      color: $color  
+  &:-moz-placeholder  /* Mozilla Firefox 4 to 18 */
+      color: $color  
+  &::-moz-placeholder  /* Mozilla Firefox 19+ */
+      color: $color  
+  &:-ms-input-placeholder  /* Internet Explorer 10+ */
+      color: $color  
+
+      /* Animación suave */
+
+/*Oculta las slides de más mientras carga el JS*/
+.owl-carousel 
+  display: block
+.owl-carousel li:not(:first-child) 
+  display: none
+.owl-carousel.owl-loaded li:not(:first-child) 
+  display: block
+
+div[class^='cont-'], div[class*=' cont-']
+  width: 100% 
+  margin: 0 auto
+  padding: 0  15px
+
+.cont-1300 
+  max-width:  1300px 
+.cont-1170 
+  max-width:  1170px 
+.cont-990 
+  max-width:  990px 
+.cont-975 
+  max-width:  975px 
+.cont-768 
+  max-width:  768px 
+.cont-550 
+  max-width:  550px 
+
+// Mixin de contenedores de anchos especificos (wrappers)
+@mixin cont($ancho)
+  .cont-#{$ancho}
+    max-width: $ancho
+
+// Espaciado entre sections
+
+.banda
+  padding: 60px 0
+  @media(max-width: 550px)
+    padding: 30px 0
+  @media(max-width: 320px)
+    padding: 20px 0
+
+// Columna de texto doble  
+.col-doble-texto 
+  -moz-column-count: 2;
+  -webkit-columns: 2;
+  columns: 2;
+  -webkit-column-gap: 46px;
+  column-gap: 46px;
+  display: block
+  @media (max-width: 700px)
+    -moz-column-count: 1;
+    -webkit-columns: 1;
+    columns: 1;
+    -webkit-column-gap: 0;
+    column-gap: 0;
+
+@-webkit-keyframes rotating /* Safari and Chrome */ 
+  from 
+    -webkit-transform: rotate(0deg)
+    -o-transform: rotate(0deg)
+    transform: rotate(0deg)
+  
+  to 
+    -webkit-transform: rotate(360deg)
+    -o-transform: rotate(360deg)
+    transform: rotate(360deg)
+  
+
+@keyframes rotating 
+  from 
+    -ms-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+    -webkit-transform: rotate(0deg)
+    -o-transform: rotate(0deg)
+    transform: rotate(0deg)
+  
+  to 
+    -ms-transform: rotate(360deg)
+    -moz-transform: rotate(360deg)
+    -webkit-transform: rotate(360deg)
+    -o-transform: rotate(360deg)
+    transform: rotate(360deg)
+  
+
+.rotating 
+  -webkit-animation: rotating 12s linear infinite
+  -moz-animation: rotating 12s linear infinite
+  -ms-animation: rotating 12s linear infinite
+  -o-animation: rotating 12s linear infinite
+  animation: rotating 12s linear infinite
+>>>>>>> a7ebb7c51fdf7bf53b75bb0e60bb1efdd123e4c5
